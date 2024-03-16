@@ -4,3 +4,7 @@
   padding: 2rem;
   text-align: center;
 }
+.bg-img{
+  background-image: url('./assets/banner.jpg') ;
+  background-size: cover;
+}

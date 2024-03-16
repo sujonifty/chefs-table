@@ -3,55 +3,55 @@
       "recipe_id": "001",
       "recipe_name": "Spaghetti Carbonara",
       "short_description": "Classic Italian pasta dish with creamy sauce",
-      "ingredients": ["300 g spaghetti", "150 g pancetta or bacon", "3 large eggs", "50 g grated Parmesan cheese", "50 g grated Pecorino Romano cheese", "2 cloves garlic", "Salt and black pepper to taste"],
+      "ingredients": ["300 gm spaghetti",   "50 g Romano cheese", "2 slice cloves garlic", "Salt and black pepper"],
       "preparing_time": 25,
       "calories": 420,
-      "recipe_image": "https://ibb.co/BzK4pvS"
+      "recipe_image": "https://i.ibb.co/NVn1vfH/1.jpg"
     },
     {
       "recipe_id": "002",
       "recipe_name": "Vegetable Stir-Fry",
       "short_description": "Healthy and colorful mix of fresh vegetables",
-      "ingredients": ["200 g broccoli", "150 g carrots", "100 g bell peppers", "100 g snow peas", "2 cloves garlic", "4 tbsp soy sauce", "2 tbsp sesame oil", "Salt and pepper to taste"],
+      "ingredients": ["200 g broccoli", "150 g carrots", "100 g bell peppers", "4 tbsp soy sauce"],
       "preparing_time": 20,
       "calories": 280,
-      "recipe_image": "https://ibb.co/yf46f7p"
+      "recipe_image": "https://i.ibb.co/6nXHnL8/2.jpg"
     },
     {
       "recipe_id": "003",
       "recipe_name": "Lemon Garlic Shrimp",
       "short_description": "Zesty shrimp sautéed with garlic and lemon",
-      "ingredients": ["400 g large shrimp", "4 cloves garlic", "1 lemon (juiced and zested)", "2 tbsp olive oil", "2 tbsp chopped parsley", "Salt and black pepper to taste"],
+      "ingredients": ["400 g large shrimp", "1 lemon (juiced & zested)",  "2 tbsp chopped parsley", "Salt and black pepper"],
       "preparing_time": 15,
       "calories": 320,
-      "recipe_image": "https://ibb.co/zsc4Vdn"
+      "recipe_image": "https://i.ibb.co/SNT3wSs/3.jpg"
     },
     {
       "recipe_id": "004",
       "recipe_name": "Caprese Sandwich",
       "short_description": "Fresh and simple sandwich with mozzarella, tomatoes, and basil",
-      "ingredients": ["4 slices of bread", "200 g fresh mozzarella cheese", "2 large tomatoes", "50 g fresh basil leaves", "2 tbsp balsamic glaze", "Salt and black pepper to taste"],
+      "ingredients": ["4 slices of bread", "200 g mozzala cheese", "2 large tomatoes", "50 g fresh basil leaves"],
       "preparing_time": 10,
       "calories": 350,
-      "recipe_image": "https://ibb.co/BrvMyb9"
+      "recipe_image": "https://i.ibb.co/yYKj6tr/4.jpg"
     },
     {
       "recipe_id": "005",
-      "recipe_name": "Homemade Chicken Noodle Soup",
+      "recipe_name": "Chicken Noodle Soup",
       "short_description": "Comforting soup made with tender chicken and noodles",
-      "ingredients": ["500 g chicken breast", "200 g egg noodles", "2 carrots", "2 celery stalks", "1 onion", "2 cloves garlic", "1 liter chicken broth", "2 tbsp chopped parsley", "Salt and black pepper to taste"],
+      "ingredients": ["500 g chicken breast", "200 g egg noodles", "1 liter chicken broth", "2 ts chopped parsley"],
       "preparing_time": 30,
       "calories": 280,
-      "recipe_image": "https://ibb.co/qyS2CDg"
+      "recipe_image": "https://i.ibb.co/tmG1zH2/5.jpg"
     },
     {
       "recipe_id": "006",
       "recipe_name": "Mushroom Risotto",
       "short_description": "Creamy and flavorful risotto with mushrooms",
-      "ingredients": ["300 g Arborio rice", "200 g mushrooms", "1 onion", "2 cloves garlic", "1 liter vegetable broth", "50 g grated Parmesan cheese", "2 tbsp butter", "2 tbsp olive oil", "Salt and black pepper to taste"],
+      "ingredients": ["300 g Arborio rice", "200 g mushrooms", "1 li vegetable broth","Salt & black pepper"],
       "preparing_time": 35,
       "calories": 380,
-      "recipe_image": "https://ibb.co/Kw1TWZ5"
+      "recipe_image": "https://i.ibb.co/Ry5Rcng/6.jpg"
     }
   ]
   
