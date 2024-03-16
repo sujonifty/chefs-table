@@ -63,7 +63,7 @@ function App() {
 
             </div>
 
-            <div className=' w-full lg:w-2/5 min-h-40'>
+            <div className='card shadow-xl w-full lg:w-2/5 min-h-40 border-2'>
               <h3 className='text-2xl font-medium'>Want to cook: {count}</h3>
               <div >
                 <table className=' w-full'>
@@ -77,8 +77,8 @@ function App() {
                   {
                     menus.map((item, index) => (
                       < div className='flex justify-between p-2' key={item.recipe_id} >
-                        <tr className='flex lg:w-full space-x-2 lg:space-x-24 justify-start items-center  p-2'>
-                          <td> <span className='pr-[4px]'>{index + 1}.</span>{item.recipe_name.slice(0, 8)}</td>
+                        <tr className='bg-gray-200 flex lg:w-full space-x-2 lg:space-x-16 justify-start items-center  p-2'>
+                          <td> <span className='pr-[4px]'>{index + 1}.</span>{item.recipe_name.slice(0, 6)}...</td>
                           <td>{item.preparing_time}</td>
                           <td>{item.calories}</td>
                           <td><button onClick={() => handleCook(item)} className='btn bg-green-400   rounded-3xl'>Preparing</button></td>
@@ -92,26 +92,26 @@ function App() {
 
 
               <div >
-                <table className=' w-full'>
+                <table className=' w-full border-t-2'>
                   <h3 className='text-2xl font-medium'>Currently cooking: {itemCount}</h3>
-                  <tr className='flex lg:w-full  justify-between items-center  p-2'>
+                  <tr className='flex lg:w-full text-end  justify-between items-center  p-2'>
                     <th>Name</th>
-                    <th>Time</th>
+                    <th className='ml-16'>Time</th>
                     <th className=' mr-16'>Calories</th>
                   </tr>
 
                   {
                     cooking.map((item, index) => (
                       < tbody className='flex justify-between p-2' key={item.recipe_id} >
-                        <tr className='flex lg:w-full space-x-2 lg:space-x-24 justify-start items-center  p-2'>
-                          <td> <span className='pr-[4px]'>{index + 1}.</span>{item.recipe_name.slice(0, 12)}</td>
+                        <tr className='border-2 bg-gray-200 flex text-end lg:w-full space-x-2 lg:space-x-24 justify-start items-center  p-2'>
+                          <td> <span className='pr-[4px]'>{index + 1}.</span>{item.recipe_name.slice(0,10)}...</td>
                           <td>{item.preparing_time}</td>
                           <td>{item.calories}</td>
                         </tr>
                        
                       </tbody>
                     ))}
-                    <div className='flex justify-end item-center gap-10 bg-orange-500'>
+                    <div className='my-5 border-t-2  flex justify-end item-center gap-5 '>
                     <p>Total time:{time} minutes</p>
                     <p>Total calories:{calory} calories</p>
                     </div>
