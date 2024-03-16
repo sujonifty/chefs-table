@@ -9,9 +9,11 @@ import { toast } from 'react-toastify';
 function App() {
   const [count, setCount] = useState(0)
   const [recipes, setRecipes] = useState([]);
-  const [menus, setMenus] = useState([])
-  const [cooking, setCooking] = useState([])
-  const [itemCount,setItemCount] = useState(0)
+  const [menus, setMenus] = useState([]);
+  const [cooking, setCooking] = useState([]);
+  const [itemCount,setItemCount] = useState(0);
+  const [time,setTime] = useState(0);
+  const [calory,setCalory] = useState(0);
 
   useEffect(() => {
     fetch('./recipes.json')
@@ -37,6 +39,8 @@ function App() {
     setCount(count -1);
     setItemCount(itemCount + 1);
     setCooking([...cooking, click]);
+    setTime(time+parseInt(click.preparing_time));
+    setCalory(calory+parseInt(click.calories));
    
 
   }
@@ -98,20 +102,19 @@ function App() {
 
                   {
                     cooking.map((item, index) => (
-                      < div className='flex justify-between p-2' key={item.recipe_id} >
+                      < tbody className='flex justify-between p-2' key={item.recipe_id} >
                         <tr className='flex lg:w-full space-x-2 lg:space-x-24 justify-start items-center  p-2'>
-                          <td> <span className='pr-[4px]'>{index + 1}.</span>{item.recipe_name.slice(0, 8)}</td>
+                          <td> <span className='pr-[4px]'>{index + 1}.</span>{item.recipe_name.slice(0, 12)}</td>
                           <td>{item.preparing_time}</td>
                           <td>{item.calories}</td>
                         </tr>
-                        <tr>
-                          <td></td>
-                          <td></td>
-                          <td>Total time:</td>
-                          <td>Total calories:</td>
-                        </tr>
-                      </div>
+                       
+                      </tbody>
                     ))}
+                    <div className='flex justify-end item-center gap-10 bg-orange-500'>
+                    <p>Total time:{time} minutes</p>
+                    <p>Total calories:{calory} calories</p>
+                    </div>
                 </table>
               </div>
 
