@@ -17,7 +17,7 @@ const Recipe = ({ recipe, handleRecipeCart }) => {
                         <h3 className='text-xl text-start font-medium'>Ingredients: {ingredients.length}</h3>
                         <ul>
                             {
-                                recipe.ingredients.map(item=><li>{item}</li>)
+                                recipe.ingredients.map((item,index)=><li key={index}>{item}</li>)
                             }
                         </ul>
                     </div>

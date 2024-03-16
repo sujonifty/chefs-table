@@ -7,6 +7,7 @@ const Cart = ({ item }) => {
                 <p>{item.recipe_name}</p>
                 <p>{item.preparing_time}</p>
                 <p>{item.calories}</p>
+                <button className='btn bg-green-400 rounded-full'>Preparing</button>
             </div>
         </div>
     );
