@@ -10,12 +10,12 @@
     },
     {
       "recipe_id": "002",
-      "recipe_name": "Vegetable Stir-Fry",
-      "short_description": "Healthy and colorful mix of fresh vegetables",
+      "recipe_name": "Vegetable Stir-Fry item",
+      "short_description": "Healthy and colorful mix of  vegetables",
       "ingredients": ["200 g broccoli", "150 g carrots", "100 g bell peppers", "4 tbsp soy sauce"],
       "preparing_time": 20,
       "calories": 280,
-      "recipe_image": "https://i.ibb.co/6nXHnL8/2.jpg"
+      "recipe_image": "https://i.ibb.co/B4T9HzD/Vegetable-Stir-Fry.jpg"
     },
     {
       "recipe_id": "003",
@@ -24,12 +24,12 @@
       "ingredients": ["400 g large shrimp", "1 lemon (juiced & zested)",  "2 tbsp chopped parsley", "Salt and black pepper"],
       "preparing_time": 15,
       "calories": 320,
-      "recipe_image": "https://i.ibb.co/SNT3wSs/3.jpg"
+      "recipe_image": "https://i.ibb.co/Gx7NCsc/Lemon-Garlic-Shrimp.jpg"
     },
     {
       "recipe_id": "004",
-      "recipe_name": "Caprese Sandwich",
-      "short_description": "Fresh and simple sandwich with mozzarella, tomatoes, and basil",
+      "recipe_name": "Caprese Sandwich item",
+      "short_description": "Fresh and simple sandwich with  tomatoes",
       "ingredients": ["4 slices of bread", "200 g mozzala cheese", "2 large tomatoes", "50 g fresh basil leaves"],
       "preparing_time": 10,
       "calories": 350,
@@ -46,12 +46,12 @@
     },
     {
       "recipe_id": "006",
-      "recipe_name": "Mashroom Risotto",
+      "recipe_name": "Mashroom Risotto item",
       "short_description": "Creamy and flavorful risotto with mushrooms",
       "ingredients": ["300 g Arborio rice", "200 g mushrooms", "1 li vegetable broth","Salt & black pepper"],
       "preparing_time": 35,
       "calories": 380,
-      "recipe_image": "https://i.ibb.co/Ry5Rcng/6.jpg"
+      "recipe_image": "https://i.ibb.co/y4nP0PQ/Mashroom-Risotto.jpg"
     }
   ]
   

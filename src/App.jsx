@@ -42,17 +42,18 @@ function App() {
     setTime(time+parseInt(click.preparing_time));
     setCalory(calory+parseInt(click.calories));
    
-
   }
 
   return (
     <>
       <Header></Header>
-      <section>
+      <section className='my-20 w-11/12 mx-auto'>
         <div>
-          <div >
+          <div className='mb-16 space-y-5'>
             <h1 className='text-3xl'>Our Recipes</h1>
-            <p className='w-full lg:w-2/3 mx-auto text-justify'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo in, atque laboriosam fugiat laudantium tenetur quo a quas error earum. Corporis, voluptates. Tempora, eius alias illo commodi consequuntur enim id.</p>
+            <p className='w-full lg:w-2/3 mx-auto text-justify'>
+            Explore a variety of delicious dishes that are easy to make and bursting with flavor. Whether you're cooking for yourself or sharing a meal with loved ones, our recipes will inspire you to get creative in the kitchen.With straightforward instructions and common ingredients, you'll find our recipes perfect for cooks of all skill levels. So, roll up your sleeves and let's get cooking!
+            </p>
           </div>
 
           <div className='flex flex-col lg:flex-row justify-between items-start gap-10'>
@@ -63,14 +64,15 @@ function App() {
 
             </div>
 
-            <div className='card shadow-xl w-full lg:w-2/5 min-h-40 border-2'>
+            <div className='card shadow-xl w-full lg:w-2/5 min-h-60 border-2'>
               <h3 className='text-2xl font-medium'>Want to cook: {count}</h3>
               <div >
                 <table className=' w-full'>
                   <thead className='flex lg:w-full  justify-between items-center  p-2'>
                     <th>Name</th>
-                    <th>Time</th>
-                    <th className=' mr-16'>Calories</th>
+                    <th className=' ml-10'>Time</th>
+                    <th className=' mr-4'>Calories</th>
+                    <th> </th>
                     <th> </th>
                   </thead>
 
@@ -78,8 +80,8 @@ function App() {
                     menus.map((item, index) => (
                       < div className='flex justify-between p-2' key={item.recipe_id} >
                         <tr className='bg-gray-200 flex lg:w-full space-x-2 lg:space-x-16 justify-start items-center  p-2'>
-                          <td> <span className='pr-[4px]'>{index + 1}.</span>{item.recipe_name.slice(0, 6)}...</td>
-                          <td>{item.preparing_time}</td>
+                          <td> <span className='pr-[4px]'>{index + 1}.</span>{item.recipe_name.slice(0, 11)}...</td>
+                          <td className=' ml-10'>{item.preparing_time}</td>
                           <td>{item.calories}</td>
                           <td><button onClick={() => handleCook(item)} className='lg:btn bg-green-400  rounded-8 lg:rounded-3xl'>Preparing</button></td>
                         </tr>
@@ -93,20 +95,20 @@ function App() {
                   <h3 className='text-2xl font-medium'>Currently cooking: {itemCount}</h3>
                   <tr className='flex lg:w-full text-end  justify-between items-center  p-2'>
                     <th>Name</th>
-                    <th className='lg:ml-16'>Time</th>
-                    <th className=' lg:mr-16'>Calories</th>
+                    <th className='lg:ml-24'>Time</th>
+                    <th className='lg:mr-20'>Calories</th>
                   </tr>
 
                   {
                     cooking.map((item, index) => (
-                      < tbody className='flex justify-between p-2' key={item.recipe_id} >
+                      < div className='flex justify-between p-2' key={item.recipe_id} >
                         <tr className='border-2 bg-gray-200 flex text-end w-full space-x-2 lg:space-x-24 justify-start items-center  p-2'>
-                          <td> <span className='lg:pr-[4px]'>{index + 1}.</span>{item.recipe_name.slice(0,10)}...</td>
+                          <td> <span className='lg:pr-[4px]'>{index + 1}.</span>{item.recipe_name.slice(0,17)}...</td>
                           <td>{item.preparing_time}</td>
                           <td>{item.calories}</td>
                         </tr>
                        
-                      </tbody>
+                      </div>
                     ))}
                     <div className='lg:my-5 border-t-2  flex justify-center lg:justify-end item-center lg:gap-5 '>
                     <p>Total time:{time} minutes</p>
@@ -119,10 +121,9 @@ function App() {
           </div>
         </div>
       </section >
-
-
     </>
   )
 }
+
 
 export default App
