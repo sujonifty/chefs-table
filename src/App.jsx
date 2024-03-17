@@ -79,8 +79,8 @@ function App() {
                       < div className='flex justify-between p-2 ' key={item.recipe_id} >
                         <tr className='bg-gray-200 fira-sans flex lg:w-full space-x-2 lg:space-x-16 justify-start items-center  p-2'>
                           <td> <span className='pr-[4px]'>{index + 1}.</span>{item.recipe_name.slice(0, 11)}...</td>
-                          <td className=' ml-10'>{item.preparing_time}</td>
-                          <td>{item.calories}</td>
+                          <td className=' ml-10'>{item.preparing_time} <br />minutes</td>
+                          <td>{item.calories} <br />calories</td>
                           <td><button onClick={() => handleCook(item)} className='btn bg-green-400  rounded-8 lg:rounded-3xl'>Preparing</button></td>
                         </tr>
                       </div>
@@ -100,10 +100,10 @@ function App() {
                   {
                     cooking.map((item, index) => (
                       < div className='flex justify-between p-2' key={item.recipe_id} >
-                        <tr className='border-2 fira-sans bg-gray-200 flex text-end w-full space-x-2 lg:space-x-24 justify-start items-center  p-2'>
+                        <tr className='border-2 fira-sans bg-gray-200 flex text-center w-full space-x-2 lg:space-x-24 justify-start items-center  p-2'>
                           <td> <span className='lg:pr-[4px]'>{index + 1}.</span>{item.recipe_name.slice(0,17)}...</td>
-                          <td>{item.preparing_time}</td>
-                          <td>{item.calories}</td>
+                          <td>{item.preparing_time} <br /> minutes </td>
+                          <td>{item.calories} <br />calories</td>
                         </tr>
                        
                       </div>
