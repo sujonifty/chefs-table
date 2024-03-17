@@ -3,7 +3,7 @@
       "recipe_id": "001",
       "recipe_name": "Spaghetti Carbonara",
       "short_description": "Classic Italian pasta dish with creamy sauce",
-      "ingredients": ["300 gm spaghetti",   "50 g Romano cheese", "2 slice cloves garlic", "Salt and black pepper"],
+      "ingredients": ["300 gm spaghetti","50 g Romano cheese","2 slice cloves garlic","Salt and black pepper"],
       "preparing_time": 25,
       "calories": 420,
       "recipe_image": "https://i.ibb.co/NVn1vfH/1.jpg"

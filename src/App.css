@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@400;500;600;700&family=Lexend+Peta:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@400;500;600;700;800&family=Lexend:wght@100..900&display=swap');
 #root {
   max-width: 1600px;
   margin: 0 auto;
@@ -8,3 +10,13 @@
   background-image: url('./assets/banner.jpg') ;
   background-size: cover;
 }
+
+.fira-sans {
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-style: normal;
+}
+.lexend{
+  font-family: "Lexend", sans-serif;
+  font-style: normal;
+}
+

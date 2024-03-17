@@ -2,7 +2,7 @@ import { CgProfile } from "react-icons/cg";
 
 const Header = () => {
     return (
-        <div className="w-11/12 mx-auto">
+        <div className="w-full lg:w-11/12 mx-auto lexend">
             <section>
                 <nav>
                     <div className="navbar bg-base-100">
@@ -46,8 +46,8 @@ const Header = () => {
                 <div className="hero-overlay bg-opacity-60 rounded-3xl"></div>
                     <div className="hero-content  lg:text-center text-neutral-content">
                         <div className=" lg:w-2/3 mx-auto ">
-                            <h1 className="lg:mb-5 text-[1.22rem]  lg:text-5xl font-extrabold lg:font-bold">Embark on a journey with our <span className="hidden lg:inline">personalized</span> cooking experiences!</h1>
-                            <p className="lg:m-8 my-3 text-justify">We offer delicious food made with fresh ingredients and friendly service. Come taste our flavorful dishes and enjoy a cozy atmosphere. We look forward to serving you soon!</p>
+                            <h1 className="lg:mb-5 text-[1.22rem]  lg:text-5xl font-extrabold ">Embark on a journey with our <span className="hidden lg:inline">personalized</span> cooking experiences!</h1>
+                            <p className="lg:m-8 my-3  font-medium">We offer delicious food made with fresh ingredients and friendly service. Come taste our flavorful dishes and enjoy a cozy atmosphere. We look forward to serving you soon!</p>
                             <div className="space-y-7">
                             <button className="btn rounded-3xl bg-green-400">Explore Now</button> <button className="btn lg:ml-10 rounded-3xl text-white btn-ghost border-2 border-gray-300">Our Feedback</button>
                             </div>

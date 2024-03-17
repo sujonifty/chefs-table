@@ -11,11 +11,11 @@ const Recipe = ({ recipe, handleRecipeCart }) => {
                     <img src={recipe_image}alt="Recipe-img" className="rounded-xl" />
                 </figure>
                 <div className="card-body items-center text-center">
-                <h2 className="card-title">{recipe_name}</h2>
+                <h2 className="text-lg font-medium lg:font-bold">{recipe_name}</h2>
                     <p>{short_description}</p>
                     <div className='border-t-2 border-dotted '>
-                        <h3 className='text-xl text-start font-medium'>Ingredients: {ingredients.length}</h3>
-                        <ul>
+                        <h3 className='text-xl text-start font-medium '>Ingredients: {ingredients.length}</h3>
+                        <ul className='list-disc text-start ml-7'>
                             {
                                 recipe.ingredients.map((item,index)=><li key={index}>{item}</li>)
                             }
@@ -33,7 +33,7 @@ const Recipe = ({ recipe, handleRecipeCart }) => {
                         </div>
                     </div>
                     <div className="card-actions">
-                    <button onClick={() => handleRecipeCart(recipe)} className="btn bg-green-400">Buy Now</button>
+                    <button onClick={() => handleRecipeCart(recipe)} className="btn w-full mx-auto bg-green-400">Want to Cook</button>
                     </div>
                 </div>
             </div>
